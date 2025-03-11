@@ -8,8 +8,7 @@ import sys
 from typing import Dict
 from simple_naptha_mcp.schemas import InputSchema
 from naptha_sdk.schemas import AgentRunInput
-from naptha_sdk.user import sign_consumer_id
-from server import mcp_fetcher
+from simple_naptha_mcp.server import mcp_fetcher
 
 logger = logging.getLogger(__name__)
 
