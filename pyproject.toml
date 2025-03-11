@@ -1,0 +1,24 @@
+[project]
+name = "simple_naptha_mcp"
+version = "0.1.0"
+description = "A simple naptha mcp for naptha node"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "naptha-sdk",
+    "pydantic>=2.10.6",
+    "mcp",
+    "httpx>=0.27",
+    "anyio>=4.5"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["simple_naptha_mcp*"]
+
+[tool.uv.sources]
+naptha-sdk = { git = "https://github.com/NapthaAI/naptha-sdk.git" }
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

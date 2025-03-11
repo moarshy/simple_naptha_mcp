@@ -1,0 +1,10 @@
+[
+    {
+        "name": "agent_deployment_1",
+        "module": {"name": "simple_naptha_mcp"},
+        "node": {"ip": "localhost"},
+        "config": {
+            "llm_config": {"config_name": "model_1"}
+        }
+    }
+]
